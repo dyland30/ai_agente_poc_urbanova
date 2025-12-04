@@ -1,0 +1,19 @@
+# Google Agent Development Kit (ADK)
+google-adk
+
+# Google Generative AI SDK
+google-genai
+
+# Google Auth libraries for authentication
+google-auth
+google-auth-oauthlib
+google-auth-httplib2
+
+# BigQuery client library
+google-cloud-bigquery
+
+# Additional Google Cloud dependencies
+google-cloud-core
+
+# Async support
+asyncio
