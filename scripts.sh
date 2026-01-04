@@ -27,7 +27,7 @@ export GOOGLE_CLOUD_PROJECT=mundomotrizdev
 export GOOGLE_CLOUD_LOCATION=us-central1 # Or your preferred location
 export GOOGLE_GENAI_USE_VERTEXAI=True
 
-export AGENT_PATH="/f/Git/urbanova/ai_agents/bigquery_agent" # Assuming capital_agent is in the current directory
+export AGENT_PATH="bigquery_agent" # Assuming capital_agent is in the current directory
 
 export SERVICE_NAME="bigquery-agent-service"
 
@@ -38,8 +38,7 @@ adk deploy cloud_run \
 --region=$GOOGLE_CLOUD_LOCATION \
 --service_name=$SERVICE_NAME \
 --app_name=$APP_NAME \
---with_ui \
-$AGENT_PATH
+--with_ui $AGENT_PATH
 
 
 echo "<secret_here>" | gcloud secrets create GOOGLE_API_KEY --project=mundomotrizdev --data-file=-
